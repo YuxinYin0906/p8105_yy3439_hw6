@@ -1,5 +1,5 @@
 ---
-title: "p8130_hw6_yy3439"
+title: "P8105 HW6"
 output: github_document
 date: "2023-12-02"
 ---
@@ -172,7 +172,7 @@ birthweight_clean = birthweight|>
 ```
 ## Step 3.1: Fit a Proposed Regression Line
 
-Then, we can fit the regression model given predictors: `fincome`, `malform`, `mrace`, and `smoken`.
+Then, we can fit the regression model given predictors: `fincome`, `malform`, `mrace`, and `smoken`. I chose the four predictors since family financial income can have an influential effect on the environment of the whole pregnancy period as well as the nutrition the mother received. In addition, `malform` refers to malformations, which could result infants' birth weight. I also include the `mrace` and `smoken` factors to examine if mother's race and smoking cigarettes result in different birth weights. 
 
 ```{r}
 # Data Cleaning
@@ -201,4 +201,7 @@ ggplot(birthweight_fit, aes(x= fitted, y = residuals))+
        y = "Residuals")
 ```
 
+Based on the residual graph, we can conclude that roughly majority of the data points gathered around the line in which residual = 0. However, there are some eminent outliers existing so we should be considerate about the protential effects these outliers might introduce to our statistical inference. 
+
+## Step 3.2: Plot of Residuals Against Fitted Values
 
