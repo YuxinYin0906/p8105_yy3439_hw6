@@ -1,0 +1,6 @@
+---
+title: "p8130_hw6_yy3439"
+output: github_document
+date: "2023-12-02"
+---
+
