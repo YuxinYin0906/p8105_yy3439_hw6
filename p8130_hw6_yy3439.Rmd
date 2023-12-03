@@ -202,7 +202,7 @@ ggplot(birthweight_fit, aes(x= fitted, y = residuals))+
        y = "Residuals")
 ```
 
-Based on the residual graph, we can conclude that roughly majority of the data points gathered around the line in which residual = 0. However, there are some eminent outliers existing so we should be considerate about the protential effects these outliers might introduce to our statistical inference. 
+Based on the residual graph, we can conclude that roughly majority of the data points gathered around the line in which residual = 0. However, there are some eminent outliers existing so we should be considerate about the potential effects these outliers might introduce to our statistical inference. In addition, there are no apparent trend of the residuals and fitted values, which indicates that residuals are independent of the fitted values. 
 
 ## Step 3.3: Cross Validation
 
