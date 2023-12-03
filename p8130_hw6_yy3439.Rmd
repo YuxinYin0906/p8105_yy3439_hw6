@@ -254,3 +254,4 @@ cv_df |>
        y = "RMSE")
 ```
 
+Based on the RMSE v.s Model graph, we can see that model `fit2` in which `lm(bwt ~ bhead + blength + babysex + bhead*blength + bhead*babysex + blength*babysex` has the lowest RMSE. If we assess solely based on RMSE, model fit2 should be our optimal choice. However, since model 2 include the most variables, we should also consider the trade off between RMSE and model complexity when choosing the model of best fit. 
